@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Navbar from '@/scenes/navbar';
 import Home from '@/scenes/home';
 import Benefits from '@/scenes/benefits';
+import OurClasses from './scenes/ourClasses';
 
 // Types
 import { SelectedPage } from './shared/types';
@@ -37,6 +38,7 @@ const App = () => {
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} isTopOfPage={isTopOfPage}/>
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage}/>
     </div>
   );
 };
